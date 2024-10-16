@@ -1,5 +1,7 @@
 # Data Engineering Roadmap for Arabic Speakers
 
+![Data Engineering Roadmap](DE-Roadmap.jpg)
+
 This repository provides a structured learning path with essential resources for aspiring data engineers. The goal is to help you acquire the necessary skills to become a Junior Data Engineer by covering the core technologies and concepts commonly used in the field.
 
 ## 📚 Core Skills & Resources

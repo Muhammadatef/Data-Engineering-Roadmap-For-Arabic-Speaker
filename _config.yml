@@ -1,0 +1,13 @@
+title: Data Engineering Roadmap Progress Tracker
+description: Interactive tracker for the Data Engineering learning path
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# GitHub Pages settings
+url: "https://muhammadatef.github.io"
+baseurl: "/Data-Engineering-Roadmap-For-Arabic-Speaker"
+
+# Repository settings
+repository: "Muhammadatef/Data-Engineering-Roadmap-For-Arabic-Speaker"

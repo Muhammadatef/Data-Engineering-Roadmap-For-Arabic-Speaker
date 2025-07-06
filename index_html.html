@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineering Roadmap Progress Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Data Engineering Roadmap Tracker</h1>
+            <p>Master the Complete Data Engineering Path with Agile Sprints</p>
+            <div class="repo-link">
+                <a href="https://github.com/Muhammadatef/Data-Engineering-Roadmap-For-Arabic-Speaker" target="_blank">
+                    📚 View Full Roadmap Repository
+                </a>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+                <button class="btn btn-primary" onclick="exportToCSV()">
+                    📊 Export to CSV
+                </button>
+                <button class="btn btn-success" onclick="saveProgress()">
+                    💾 Save Progress
+                </button>
+                <button class="btn btn-info" onclick="loadProgress()">
+                    📂 Load Progress
+                </button>
+                <button class="btn btn-warning" onclick="resetTracker()">
+                    🔄 Reset Tracker
+                </button>
+                <button class="add-sprint-btn" onclick="addNewSprint()">
+                    ➕ Add Sprint
+                </button>
+            </div>
+            
+            <div class="progress-overview">
+                <span>Overall Progress:</span>
+                <div class="overall-progress-bar">
+                    <div class="overall-progress-fill" id="overall-progress-fill"></div>
+                </div>
+                <span id="overall-progress-text">0%</span>
+            </div>
+        </div>
+
+        <div class="agile-info">
+            <div style="padding: 15px 25px; background: #e8f4fd; border-left: 4px solid #3498db; margin: 0;">
+                <h4 style="margin: 0 0 8px 0; color: #2c3e50;">🎯 Agile Sprint Management</h4>
+                <p style="margin: 0; font-size: 14px; color: #4a5568;">
+                    <strong>Drag & Drop:</strong> Reorder sprints by dragging rows • 
+                    <strong>Dynamic Dates:</strong> Start dates auto-calculate 2-week sprints • 
+                    <strong>Editable Skills:</strong> Click to edit skill names • 
+                    <strong>Personal Comments:</strong> Add your own remarks
+                </p>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="roadmap-table">
+                <thead>
+                    <tr>
+                        <th>Sprint</th>
+                        <th>Skill/Technology</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Status</th>
+                        <th>Progress</th>
+                        <th>Rating Before</th>
+                        <th>Rating After</th>
+                        <th>Concepts Understood</th>
+                        <th>Concepts Need Help</th>
+                        <th>Personal Comments</th>
+                    </tr>
+                </thead>
+                <tbody id="roadmap-body">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="export-section">
+            <h3>📈 Progress Statistics</h3>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="completed-sprints">0</div>
+                    <div class="stat-label">Completed Sprints</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="in-progress-sprints">0</div>
+                    <div class="stat-label">In Progress</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="avg-rating-before">0.0</div>
+                    <div class="stat-label">Avg Rating Before</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="avg-rating-after">0.0</div>
+                    <div class="stat-label">Avg Rating After</div>
+                </div>
+            </div>
+            <p>💡 <strong>Pro Tips:</strong> Click stars to rate skills • Use slider to update progress • Drag rows to reorder sprints</p>
+            <p>🔗 <strong>Agile Features:</strong> Dynamic dates • Editable skills • Personal comments • Your data saves automatically!</p>
+        </div>
+    </div>
+
+    <input type="file" id="file-input" accept=".json" class="hidden">
+    <script src="script.js"></script>
+</body>
+</html>

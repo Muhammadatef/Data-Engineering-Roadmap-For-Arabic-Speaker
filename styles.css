@@ -84,6 +84,34 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+.agile-info {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.agile-info h4 {
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+/* Fix for sectioned h1 warning */
+section h1, .agile-info h1, .export-section h1 {
+    font-size: 1.8em;
+    margin: 0 0 15px 0;
+}
+
+.export-section h3 {
+    color: #2c3e50;
+    margin: 0 0 15px 0;
+    font-size: 1.4em;
+}
+
+.agile-info p {
+    color: #4a5568;
+    line-height: 1.5;
+}
+
 .controls {
     padding: 25px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);

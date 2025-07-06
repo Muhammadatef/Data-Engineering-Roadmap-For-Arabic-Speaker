@@ -51,4 +51,3 @@ By following this roadmap, you will gain the fundamental knowledge needed to app
 ---
 
 Good luck on your journey to becoming a Data Engineer! 🚀
-
